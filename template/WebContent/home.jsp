@@ -20,7 +20,7 @@
 			padding:0;
 			line-height:1.6;
 			letter-spacing:1px;
-			font-family:Verdana,Helvetica,sans-serif;
+			font-family:Verdana, Helvetica, sans-serif;
 			font-size:12px;
 			color:#333;
 			background:#fff;
@@ -72,7 +72,7 @@
 			<p>HOME</p>
 		</div>
 		<div>
-			<s:form action="">
+			<s:form action="HomeAction">
 				<s:submit value="商品購入"/>
 			</s:form>
 		</div>
