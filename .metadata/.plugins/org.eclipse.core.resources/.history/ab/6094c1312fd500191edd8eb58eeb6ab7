@@ -1,0 +1,13 @@
+package com.internousdev.template.dto;
+
+public class MyPageDTO {
+	private String itemName;
+	private String total Price;
+	private String total Count;
+	private String payment;
+
+	public String getItemName() {
+		return this.itemName;
+	}
+
+}
