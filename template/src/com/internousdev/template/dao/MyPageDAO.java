@@ -1,20 +1,22 @@
 package com.internousdev.template.dao;
 
-import com.internousdev.template.util.DBConnector;
-import com.mysql.jdbc.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+
 import com.internousdev.template.dto.MyPageDTO;
 import com.internousdev.template.util.DBConnector;
+import com.mysql.jdbc.Connection;
+
 
 public class MyPageDAO {
-	public class MyPageDTO getMyPageUserInfo(
+	public MyPageDTO getMyPageUserInfo(
 			String item_transaction_id,
 			String user_master_id)
 	throws SQLException{
 		DBConnector dbConnector = new DBConnector();
 		Connection connection = dbConnector.getConnection();
-		MypageDTO myPageDTO= new MyPageDTO();
+		MyPageDTO myPageDTO= new MyPageDTO();
 
 		String sql ="SELECT iit.item_name,ubit.total_price,ubit.total_count,"
 				+"ubit.pay FROM user_buy_item_transaction ubit LEFT JOIN item_info_transaction iit ON"
@@ -25,11 +27,11 @@ public class MyPageDAO {
 					connection.prepareStatement(sql);
 			preparedStatement.setString(1,item_transaction_id);
 			preparedStatement.setString(2,user_master_id);
-			ResultSet resultSet = prepareStatement.executeQuery();
+			ResultSet resultSet = preparedStatement.executeQuery();
 
 			if(resultSet.next()) {
 				myPageDTO.setItemName(resultSet.getString("item_name"));
-				myPageDTO.setTotalprice(resultSet.getString("tptal_price"));
+				myPageDTO.setTotalPrice(resultSet.getString("tptal_price"));
 				myPageDTO.setTotalCount(resultSet.getString("total_count"));
 				myPageDTO.setPayment(resultSet.getString("pay"));
 			}

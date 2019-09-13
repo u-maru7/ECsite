@@ -9,28 +9,28 @@ public class MyPageDTO {
 	public String getItemName() {
 		return this.itemName;
 	}
-	public String setItemName(String itemName) {
+	public void setItemName(String itemName) {
 		this.itemName =itemName;
 	}
 
-	public String TotalPrice() {
+	public String getTotalPrice() {
 		return this.totalPrice;
 	}
-	public String setTotalPrice(String totalPrice) {
+	public void setTotalPrice(String totalPrice) {
 		this.totalPrice =totalPrice;
 	}
 
 	public String getTotalCount() {
 		return this.totalCount;
 	}
-	public String setTotalCount(String totalCount) {
+	public void  setTotalCount(String totalCount) {
 		this.totalCount =totalCount;
 	}
 
 	public String getPayment() {
 		return this.payment;
 	}
-	public String setPayment(String payment) {
+	public void setPayment(String payment) {
 		this.payment =payment;
 	}
 }
