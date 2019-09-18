@@ -11,10 +11,10 @@ public class BuyItemDTO {
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
+
 	public String getItemPrice() {
 		return itemPrice;
 	}
-
 	public void setItemPrice(String itemPrice) {
 		this.itemPrice = itemPrice;
 	}
@@ -22,7 +22,6 @@ public class BuyItemDTO {
 	public int getId() {
 		return id;
 	}
-
 	public void setId(int id) {
 		this.id = id;
 	}
