@@ -1,5 +1,7 @@
 INDEX VERSION 1.131
 C:\Users\shironanaki\Desktop\workspace\workspace-maruyama\ECsite\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3461444228.index
 \template\src
+C:\Users\shironanaki\Desktop\workspace\workspace-maruyama\ECsite\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2254090954.index
+\ecsite\src
 C:\Users\shironanaki\Desktop\workspace\workspace-maruyama\ECsite\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4170188757.index
 \template\src
