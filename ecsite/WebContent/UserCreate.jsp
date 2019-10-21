@@ -59,7 +59,7 @@ table{
 			<p>UserCreate</p>
 		</div>
 		<div>
-			<s:if test="errorMessage" !="">
+			<s:if test="errorMessage !=''">
 				<s:property value="errorMessage" escape="false"/>
 			</s:if>
 			<table>
@@ -93,7 +93,7 @@ table{
 			</table>
 			<div>
 				<span>前の画面に戻るには</span>
-				<a href='<s:url action="HomeAction"　/>'>こちら</a>
+				<a href='<s:url action="HomeAction" />'>こちら</a>
 			</div>
 		</div>
 	</div>
